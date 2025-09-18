@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cardview_light_background">
+
+    <EditText
+        android:id="@+id/etc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Enter Number"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/etc1"
+        android:onClick="onclick"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/etc1"
+        android:onClick="onclick"
+        android:layout_toRightOf="@id/btplus"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btmul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/etc1"
+        android:onClick="onclick"
+        android:layout_toRightOf="@id/btminus"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/btdiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/etc1"
+        android:onClick="onclick"
+        android:layout_toRightOf="@id/btmul"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onnum"
+        android:layout_below="@id/btplus"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onnum"
+        android:layout_below="@id/btplus"
+        android:layout_toRightOf="@id/b1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btplus"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onnum"
+        android:layout_toRightOf="@id/b2"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onnum"
+        android:layout_below="@id/btdiv"
+        android:layout_toRightOf="@id/b3"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onnum"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/b1"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onnum"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@id/b5"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onnum"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@id/b6"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onnum"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@id/b7"
+        android:text="8"/>
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onnum"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/b5"
+        android:text="9"/>
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/b5"
+        android:onClick="onnum"
+        android:layout_toRightOf="@id/b9"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/btcan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b7"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onclick"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/b0"
+        android:text="Cancel" />
+
+
+    <Button
+        android:id="@+id/bteq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b7"
+        android:layout_marginTop="20dp"
+        android:onClick="onclick"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/btcan"
+        android:text="=" />
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/teal_200">
+
+    <EditText
+        android:id="@+id/etresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter Number"
+        android:inputType="numberDecimal"
+        android:focusable="false"
+        android:clickable="false" />
+
+    <!-- Operator buttons -->
+    <Button
+        android:id="@+id/btplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etresult"
+        android:layout_marginTop="20dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etresult"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btplus"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btmul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etresult"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btminus"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/btdiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etresult"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btmul"
+        android:text="/" />
+
+    <!-- Number buttons row 1 -->
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btplus"
+        android:layout_marginTop="20dp"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btplus"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/b1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btplus"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/b2"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btdiv"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/b3"
+        android:text="4" />
+
+    <!-- Number buttons row 2 -->
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_marginTop="20dp"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/b5"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/b6"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/b7"
+        android:text="8" />
+
+    <!-- Number buttons row 3 -->
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b5"
+        android:layout_marginTop="20dp"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b5"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/b9"
+        android:text="0" />
+
+    <!-- Cancel and Equals buttons -->
+    <Button
+        android:id="@+id/btcan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b7"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/b0"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/bteq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b7"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btcan"
+        android:text="=" />
+
+</RelativeLayout>

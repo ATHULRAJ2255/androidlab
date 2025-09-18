@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/T1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#990232"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="361dp"
+        android:layout_height="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="34dp"
+        android:paddingBottom="30dp"
+        android:text="THIS IS THE FIRST ACTIVITY"
+        android:textAllCaps="true"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="230dp" android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginBottom="215dp"
+        android:onClick="buttonClick"
+        android:text="GO TO SECOND ACTIVITY" />
+</RelativeLayout>
